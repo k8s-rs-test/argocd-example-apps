@@ -24,6 +24,10 @@ gateways:
       targetPort: 8443
       name: https
       protocol: TCP
+    - port: 31400
+      targetPort: 31400
+      name: tcp
+      protocol: TCP
       # This is the port where sni routing happens
     - port: 15443
       targetPort: 15443
