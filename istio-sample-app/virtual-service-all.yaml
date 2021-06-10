@@ -23,10 +23,15 @@ spec:
     - headers:
         end-user:
           exact: jason
+    fault:
+      delay:
+        percentage:
+          value: 100.0
+        fixedDelay: 7s
     route:
     - destination:
         host: reviews
-        subset: v2
+        subset: v1
   - route:
     - destination:
         host: reviews
