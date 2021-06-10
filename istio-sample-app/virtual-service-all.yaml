@@ -24,10 +24,10 @@ spec:
         end-user:
           exact: jason
     fault:
-      delay:
+      abort:
+        httpStatus: 500
         percentage:
-          value: 100.0
-        fixedDelay: 2s
+          value: 100
     route:
     - destination:
         host: reviews
