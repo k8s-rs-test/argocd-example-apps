@@ -20,15 +20,15 @@ spec:
   revisionHistoryLimit: 2
   selector:
     matchLabels:
-      app: rollouts-demo
+      app: rollouts-demo-istio
   template:
     metadata:
       labels:
-        app: rollouts-demo
+        app: rollouts-demo-istio
         istio-injection: enabled
     spec:
       containers:
-      - name: rollouts-demo
+      - name: rollouts-demo-istio
         image: argoproj/rollouts-demo:blue
         ports:
         - name: http
