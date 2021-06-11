@@ -6,7 +6,7 @@ spec:
   gateways:
   - rollouts-demo-gateway
   hosts:
-  - rollouts-demo.local
+  - istio-rollout.dubass83.xyz
   http:
   - name: primary
     route:
